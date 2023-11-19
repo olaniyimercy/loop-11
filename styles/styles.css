@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body { 
+    background-color: #de8a89;
+    overflow: hidden;
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*HEADER*/
+.header {
+    display: grid;
+    grid-template-columns: 27vw 17vw 17vw  14vw 0vw;
+    grid-template-rows: repeat(1, 1fr);
+
+    margin-top: 3rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+    width: 67%;
+    color: #ecb9b8;
+
+    :hover {
+        color: #f0cac9;
+        cursor: pointer;
+    } 
+}
+
+#syn {
+    color: #fff;
+}
+
+
+
+/*PARAGRAPH*/
+.text {
+    width: 67%;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+/*FOOTER*/
+.footer {
+    position: relative;
+}
+
+.board {
+    width: 70rem;
+    height: 4.5rem;
+    background-color: #ecb9b8;
+    align-items: center;
+
+    display: flex;
+    gap: 65.5rem;
+    padding: 0 2rem;
+}
+
+.board::before {
+    content:"\2039";
+}
+
+.board::after {
+    content:"\203A";
+}
+
+.others {
+    display: grid;
+    grid-template-columns: 22vw  22vw 22vw;
+    grid-template-rows: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 5rem;
+
+
+
+    .time {
+        background-color: #3e3c3d;
+    } 
+
+    .degree {
+        background-color: #353334;
+    }
+
+    .weight {
+        background-color: #201e1f;
+    }
+}
+
+.others__text {
+    height: 17rem;
+    padding: 6rem 2.5rem;
+}
+
+.others__headings {
+    color: #a37472;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h2 {
+    padding: .3rem 0;
+    color: #fff;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    width: 18rem;
+    padding: 1rem;
+    margin: 0 1rem;
+    border-radius: 0.2rem;
+    border: none;
+    bottom: -1.7rem;
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+    margin-bottom: .1rem;
+}
