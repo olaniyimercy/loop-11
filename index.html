@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
     <link rel="stylesheet" href="styles/styles.css" />
     <title>Loop-11</title>
   </head>
@@ -22,25 +26,36 @@
         results.
       </p>
     </div>
-    <footer class="footer">
-      <div class="board"></div>
-      <div class="others">
-        <div class="time others__text">
-          <p class="others__headings">Timer</p>
-          <h2>45 min</h2>
+    <div class="footer">
+      <section>
+        <div class="nav">
+          <div>
+            <i class="fa-solid fa-caret-left"></i>
+          </div>
         </div>
 
-        <div class="degree others__text">
-          <p class="others__headings">Temperature</p>
-          <h2>Cold</h2>
+        <div class="others">
+          <div class="time others__text">
+            <p class="others__headings">Timer</p>
+            <h2>45 min</h2>
+          </div>
+
+          <div class="degree others__text">
+            <p class="others__headings">Temperature</p>
+            <h2>Cold</h2>
+          </div>
+
+          <div class="weight others__text">
+            <p class="others__headings">Load</p>
+            <h2>Medium</h2>
+          </div>
         </div>
 
-        <div class="weight others__text">
-          <p class="others__headings">Load</p>
-          <h2>Medium</h2>
+        <div class="nav">
+          <i class="fa-solid fa-caret-right"></i>
         </div>
-        <button class="btn">start</button>
-      </div>
-    </footer>
+      </section>
+      <button class="btn">start now</button>
+    </div>
   </body>
 </html>

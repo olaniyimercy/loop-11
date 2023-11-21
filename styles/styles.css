@@ -54,24 +54,22 @@ body {
     position: relative;
 }
 
-.board {
-    width: 70rem;
-    height: 4.5rem;
-    background-color: #ecb9b8;
-    align-items: center;
-
+section {
     display: flex;
-    gap: 65.5rem;
-    padding: 0 2rem;
+    justify-content: center;
 }
 
-.board::before {
-    content:"\2039";
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ecb8b9;
+  cursor: pointer;
+  width: 6rem;
+  height: 6rem;
+  
 }
 
-.board::after {
-    content:"\203A";
-}
 
 .others {
     display: grid;
@@ -79,10 +77,6 @@ body {
     grid-template-rows: repeat(1, 1fr);
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 0;
-    right: 5rem;
-
 
 
     .time {
@@ -121,7 +115,7 @@ h2 {
     position: absolute;
     width: 18rem;
     padding: 1rem;
-    margin: 0 1rem;
+    margin: 0 7rem;
     border-radius: 0.2rem;
     border: none;
     bottom: -1.7rem;
